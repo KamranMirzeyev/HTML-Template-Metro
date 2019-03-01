@@ -1,0 +1,109 @@
+#login{
+    background-color: $bg-color-dark;
+    height: 100vh;
+    .row{
+        justify-content: center;
+    }
+    .login-content{
+        width: 280px;
+    }
+    .login-page{
+        width: 280px;
+        margin: 0 auto;
+        position: relative;
+        .login-logo{
+        width: 280px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center; 
+        img{
+                max-width: 100%;
+            }
+        }
+        .form-login{
+            margin-top: 78px;
+            width: 280px;
+            .form-control{
+                height: 49px;
+                margin-bottom: 20px;
+                background-color: $bg-color-lightless;
+                color: $white;
+                border-radius: 5px;
+                
+            }
+            .phone-input{
+                width: 200px;
+                display: inline-block;
+            }
+            .phone-operator{
+                width: 75px;
+                height: 49px;
+                background-color: $bg-color-lightless;
+                border: 1px solid $white;
+                border-radius: 5px;
+                color: $white;
+                padding-left: 10px;    
+                -moz-appearance:none; /* Firefox */
+                -webkit-appearance:none; /* Safari and Chrome */
+                appearance:none;
+                background: url("../img/down.png") $bg-color-lightless no-repeat calc(100% - 10px) !important;
+                
+            }
+            a.password-repair{
+                text-decoration: none;
+                color: $bg-color-light;
+                margin-top: 30px;
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+               
+            }
+        }
+        .login-reg{
+            margin-top: 60px;
+            a{
+                text-decoration: none;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+      
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-logo{
+        margin-top: 70px !important;
+    }
+    .form-login{
+        margin-top: 70px !important;
+    }
+    .login-reg{
+        margin-top: 80px !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .form-login{
+        width: 240px !important;
+    }
+    .btn-green{
+        width: 240px !important;
+    }
+    .btn-blue{
+        width: 240px !important;
+    }
+    .login-logo{
+        margin-top: 50px !important;
+    }
+    .form-login{
+        margin-top: 50px !important;
+    }
+    .login-reg{
+        margin-top: 50px !important;
+    }
+    .login-logo{
+        width: 240px !important;
+    }
+    
+}

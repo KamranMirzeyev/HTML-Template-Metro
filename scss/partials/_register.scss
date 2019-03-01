@@ -1,0 +1,79 @@
+#register{
+    position: relative;
+    height: 100vh;
+    background-color: $bg-color-dark;
+    
+    .row{
+        justify-content: center;
+    }
+    .reg-content{
+        position: relative;
+        width: 280px;
+        margin: 0 auto;
+        
+    }
+    .login-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .reg-title{
+        width: 280px;
+        margin-top: 33px;
+        text-align: center;
+        h4{
+            color: $white;
+            font-size: $font-size*2;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .reg-form{
+        width: 280px;
+        margin-top: 25px;
+        .form-group{
+            margin-bottom: 20px;
+        }
+        .form-control{
+            height: 49px;
+            border-radius: 5px;
+            background-color: $bg-color-lightless;  
+            color: $white;
+        }
+        .phone-input{
+            width: 200px;
+            display: inline-block;
+        }
+        .phone-operator{
+            width: 75px;
+            height: 49px;
+            background-color: $bg-color-lightless;
+            border: 1px solid $white;
+            border-radius: 5px;
+            color: $white;
+            padding-left: 10px;    
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance:none; /* Safari and Chrome */
+            appearance:none;
+            background: url("../img/down.png") $bg-color-lightless no-repeat calc(100% - 10px) !important;
+        }
+        button{
+            margin-top: 25px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .reg-form{
+        width: 240px !important;
+    }
+    .btn-green{
+        width: 240px !important;
+    }
+    .reg-title{
+        width: 240px !important;
+        h4{
+            font-size: $font-size*1.5 !important;
+        }
+    }
+}

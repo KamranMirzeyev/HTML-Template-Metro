@@ -1,0 +1,73 @@
+#comfirm{
+    position: relative;
+    height: 100vh;
+    background-color: $bg-color-dark;
+    .row{
+        justify-content: center;
+    }
+    .comfirm-content{
+        position: relative;
+        width: 280px;
+        margin: 0 auto;
+        .comfirm-title{
+            width: 280px;
+            margin-top: 33px;
+            text-align: center;
+            h4{
+                color: $white;
+                font-size: $font-size*2;
+            }
+        }
+        .comfirm-form{
+            width: 280px;
+            margin-top: 114px;
+
+            label{
+                color: $white;
+                font-size: $font-size*1.25;
+                margin-bottom: 50px;
+                width: 284px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 24px;
+                text-align: left;
+            }
+            .form-control{
+                height: 49px;
+                background-color: $bg-color-lightless;
+                color: $white;
+            }
+            button{
+                margin-top: 115px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .comfirm-form{
+        button{
+            margin-top: 115px !important;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .comfirm-form{
+        width: 240px !important;
+        button{
+            margin-top: 115px !important;
+        }
+        label{
+            width: 250px !important;
+        }
+    }
+    .btn-green{
+        width: 240px !important;
+    }
+    .comfirm-title{
+        width: 240px !important;
+        h4{
+            font-size: $font-size*1.5 !important;
+        }
+    }
+}

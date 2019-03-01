@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appeal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="scss/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="scss/style2.css">
+</head>
+
+<body>
+    <section id="appeal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 appeal-now">
+                    <div class="appeal-now-content">
+                        <div class="appeal-title">
+                            <h4>Müraciət et</h4>
+                        </div>
+                        <form action="#" method="post" class="appeal-form">
+                            <label for="">Hardan</label>
+                            <select name="where" id="where">
+                                <option value="1">Azadlıq</option>
+                                <option value="2">Dərnəgül</option>
+                                <option value="3">Nəsimi</option>
+                            </select>
+                            <label for="">Haraya</label>
+                            <select name="to" id="where">
+                                <option value="1">Azadlıq</option>
+                                <option value="2">Dərnəgül</option>
+                                <option value="3">Nəsimi</option>
+                            </select>
+                            <label for="departureTime">Gediş saatı</label>
+                            <div class="form-group">
+                                <input type='text' class="form_datetime form-control" />
+                            </div>
+                            <button type="submit" class="btn-greenLight">Göndər</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10">
+                    <div class="row appeal-now">
+                        <div class="appeal-title">
+                            <h4>Müraciətlərim</h4>
+                        </div>
+                        <div class="dyamic">
+                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12">
+                                <div class="appeal-last">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="date-time">
+                                                <span><i class="far fa-clock"></i></span>
+                                                <span>01.01.2019 / 15:45</span>
+                                                <div class="rate">
+                                                    <span class="rate-star"><i class="far fa-star"></i></span>
+                                                    <a href="#">Rate this</a>
+                                                    <span class="rate-count">3</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="fromto">
+                                                <h5>Hardan</h5>
+                                                <p>Elmlər Akademiyası</p>
+                                            </div>
+                                            <div class="goto">
+                                                <h5>Haraya</h5>
+                                                <p>Nəriman Nərimanov</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12">
+                                <div class="appeal-last">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="date-time">
+                                                <span><i class="far fa-clock"></i></span>
+                                                <span>01.01.2019 / 15:45</span>
+                                                <div class="rate">
+                                                    <span class="rate-star"><i class="far fa-star"></i></span>
+                                                    <a href="#">Rate this</a>
+                                                    <span class="rate-count">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="fromto">
+                                                <h5>Hardan</h5>
+                                                <p>Neriman Nerimanovv</p>
+                                            </div>
+                                            <div class="goto">
+                                                <h5>Haraya</h5>
+                                                <p>Nəriman Akademiyası</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/locales/bootstrap-datetimepicker.az.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(".form_datetime").datetimepicker({ format: 'yyyy-mm-dd hh:ii' });
+        });
+    </script>
+</body>
+
+</html>
